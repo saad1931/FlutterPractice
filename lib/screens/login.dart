@@ -8,7 +8,7 @@ class Login extends StatelessWidget {
    return Material(
       child: Container(
         child: Center(
-          child: Text("Login Screen",
+          child: Text("Login page",
           style: TextStyle(
             fontSize: 20,
             color: Colors.black,
