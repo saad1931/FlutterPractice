@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       // home: Home(), //if we use routes then no use of it 
       // For light theme
       themeMode: ThemeMode.light,
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       // ),
 
       // initialRoute (app will start from initialRoute)
-      initialRoute: "/Home",
+      initialRoute: "/Login",
       
       // Routes
       routes: {
