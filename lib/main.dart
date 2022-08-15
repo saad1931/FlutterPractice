@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_challenge/screens/home.dart';
 import 'package:flutter_challenge/screens/login.dart';
+import 'package:flutter_challenge/utils/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,9 +30,9 @@ class MyApp extends StatelessWidget {
       
       // Routes
       routes: {
-        "/":(context)=>Home(),
-        "/Home":(context)=>Home(),
-        "/Login":(context)=>Login(),
+        
+        MyRoutes.HomeRoute:(context)=>Home(),
+        MyRoutes.LoginRoute:(context)=>Login(),
       },
 
     );
