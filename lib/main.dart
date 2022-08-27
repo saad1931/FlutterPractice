@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_challenge/screens/home.dart';
 import 'package:flutter_challenge/screens/login.dart';
 import 'package:flutter_challenge/utils/routes.dart';
+import 'package:flutter_challenge/widgets/MyThemes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,14 +18,12 @@ class MyApp extends StatelessWidget {
       // home: Home(), //if we use routes then no use of it 
       // For light theme
       themeMode: ThemeMode.light,
-      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      theme: MyThemes.lighttheme(context),
       
       // For dark theme
-      // themeMode: ThemeMode.dark,
-      // darkTheme: ThemeData(
-      //   brightness: Brightness.dark
-      // ),
+      darkTheme: MyThemes.darktheme(context),
 
+      
       // initialRoute (app will start from initialRoute)
       initialRoute: "/Home",
       
