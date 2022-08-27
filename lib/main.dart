@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       // ),
 
       // initialRoute (app will start from initialRoute)
-      initialRoute: "/Login",
+      initialRoute: "/Home",
       
       // Routes
       routes: {
